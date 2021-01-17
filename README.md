@@ -1,5 +1,46 @@
 # TestApp
 
+1. In tsconfig.json add to compilerOptions :  {      
+...
+"allowJS" :true,
+...
+}
+
+2. To use custom elememnts add in @NgModule configuration and import fromm @angular/core: 
+{...
+    schemas:[CUSTOM_ELEMENTS_SCHEMA],
+...
+}
+3. For polyfills do npm install --save @webcomponents/webcomponentsjs
+
+4. add this to assests in angular.json 
+"assets":[
+    ...
+    {
+               "glob": "**/*.js",
+               "input": "node_modules/@webcomponents/webcomponentsjs",
+               "output": "webcomponets/"
+             },
+    ...
+]
+
+5. add this in head of index.html
+...
+ <script src="webcomponents/webcomponents-loader.js"></script>
+  <script>
+   if (!window.customElements){document.write('<!--');}
+  </script>
+  <script src="webcomponents/custom-elements-es5-adapter.js"></script>
+...
+
+6. Do   $  npm install custom-table-1.0.0.tgz
+
+first take the file into your app 
+
+
+7. import into app.component.ts and use in app.component.html
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 
 ## Development server
