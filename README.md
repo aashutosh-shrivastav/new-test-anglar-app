@@ -11,7 +11,7 @@
     schemas:[CUSTOM_ELEMENTS_SCHEMA],
 ...
 }
-3. For polyfills do npm install --save @webcomponents/webcomponentsjs
+3. For polyfills do `npm install --save @webcomponents/webcomponentsjs`
 
 4. add this to assests in angular.json 
 "assets":[
@@ -33,7 +33,7 @@
   <script src="webcomponents/custom-elements-es5-adapter.js"></script>
 ...
 
-6. Do   $  npm install custom-table-1.0.0.tgz
+6. Do  ` $  npm install custom-table-1.0.0.tgz`
 
 first take the file into your app 
 
