@@ -28,7 +28,7 @@
 ...
  <script src="webcomponents/webcomponents-loader.js"></script>
   <script>
-   if (!window.customElements){document.write('<!--');}
+   if (!window.customElements){document.write('>__<');}
   </script>
   <script src="webcomponents/custom-elements-es5-adapter.js"></script>
 ...
