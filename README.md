@@ -1,4 +1,4 @@
-# TestApp
+# Test Angular App
 
 1. In tsconfig.json add to compilerOptions :  {      
 ...
